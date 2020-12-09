@@ -8,6 +8,12 @@ There are 2 methods to do this:
 Both are included.
 
 ## Explanation
+
+### API Key
+In order to execute the script create a `Coveo API Key` with the following priviliges:
+***Search > Query Pipelines > Edit All (or Custom and select the pipeline you are allowed to edit).***
+
+
 ### Using ResultRanking calls
 1. (optional) First start by adding a `condition` to the platform (if you need it of course).
 

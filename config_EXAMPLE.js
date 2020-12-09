@@ -5,7 +5,7 @@ function define(name, value) {
   });
 }
 
-//   Api Key (With Admin rights), key is defined in config.js
+//   Api Key (With Query Pipeline Write rights), key is defined in config.js
 define("apiKeyToUse", "");
 // Org Id from your Coveo Org
 define("orgId", "");
