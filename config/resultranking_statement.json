@@ -1,0 +1,9 @@
+
+{
+  "id": "string",
+  "description": "$note",
+  "feature": "ranking",
+  "definition": "$rule",
+  "parent": "$conditionReference",
+  "position": "0"
+}

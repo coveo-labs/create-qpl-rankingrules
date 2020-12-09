@@ -1,0 +1,35 @@
+{
+  "name": "$name",
+  "kind": "ranking_expression",
+  "defaultMatchOperator": {
+    "kind": "is"
+  },
+  "predicates": [
+    {
+      "kind": "basicExpressionAndLocalePredicate",
+      "basicQueryExpression": "$query",
+      "locale": {
+        "kind": "all"
+      },
+      "matchOperator": {
+        "kind": "is"
+      }
+    }
+  ],
+  "targets": [
+    {
+      "queryExpression": "$rule"
+    }
+  ],
+  "condition": {
+    "reference": "$conditionReference"
+  },
+  "matchQuery": true,
+  "matchAdvancedQuery": false,
+  "includeInFacets": true,
+  "description": "$note",
+  "rankingModifier": $modifier,
+  "isConstant": true,
+  "applyToEveryResult": true,
+  "enabled": true
+}

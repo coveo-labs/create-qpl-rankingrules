@@ -1,0 +1,6 @@
+{
+  "description": "$note",
+  "feature":"when",
+  "definition": "$rule",
+  "position": 0
+}
