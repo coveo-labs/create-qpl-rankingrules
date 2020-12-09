@@ -7,6 +7,37 @@ There are 2 methods to do this:
 
 Both are included.
 
+## Explanation
+### Using ResultRanking calls
+1. (optional) First start by adding a `condition` to the platform (if you need it of course).
+
+   Using: `https://platform.cloud.coveo.com/rest/search/v1/admin/pipelines/statements?organizationId=${settings.orgId}`
+
+   See for the contents: `/config/condition.json`.
+
+2. Next step is add the actual ResultRanking information to the platform.
+
+   Using: `https://platform.cloud.coveo.com/rest/search/v2/admin/pipelines/${pipelineId}/resultRankings?organizationId=${settings.orgId}`
+
+   See for the contents: `/config/resultranking.json`.
+
+### Using Statement calls
+1. (optional) First start by adding a `condition` to the platform (if you need it of course).
+
+   Using: `https://platform.cloud.coveo.com/rest/search/v1/admin/pipelines/statements?organizationId=${settings.orgId}`
+
+   See for the contents: `/config/condition.json`.
+
+   Remark: With this approach you cannot select a `query` in the actual result ranking statement (which you can do when you use `ResultRanking calls`). So when you want to combine a timestamp + a query. You need to combine them into a single statement. Like:
+`when ( ( $queryTimeUtc isBetween ${beginTime.toISOString()} and ${endTime.toISOString()} ) and $query is "${query}" )`
+
+2. Next step is add the actual Ranking statement information to the platform.
+
+   Using: `https://platform.cloud.coveo.com/rest/search/v2/admin/pipelines/${pipelineId}/statements?organizationId=${settings.orgId}`.
+d
+  See for the contents: `/config/resultranking_statement.json`.
+
+
 ## Requirements
 Node JS => 8.0
 
