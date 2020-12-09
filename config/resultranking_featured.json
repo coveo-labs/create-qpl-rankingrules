@@ -1,0 +1,47 @@
+{
+  "name": "$name",
+  "kind": "featured_result",
+  "defaultMatchOperator": {
+    "kind": "\"is\""
+  },
+  "predicates": [
+    {
+      "kind": "basicExpressionAndLocalePredicate",
+      "basicQueryExpression": "video game",
+      "locale": {
+        "kind": "all"
+      }
+    }
+  ],
+  "targets": [
+    {
+      "uniqueId": "2228d0a698fd"
+    },
+    {
+      "localizedContent": {
+        "familyId": "112233",
+        "locale": {
+          "auto": {
+            "default": "en-US"
+          }
+        },
+        "familyIdField": "@sfarticlenumber",
+        "localeField": "@locale"
+      }
+    },
+    {
+      "queryExpression": "@permanentId=\"6cdw9d02d17\""
+    }
+  ],
+  "condition": {
+    "reference": "{ \"reference\": \"3896e64f-2132-463a-81c8-26f2e9f89e0a\" }"
+  },
+  "matchQuery": true,
+  "matchAdvancedQuery": true,
+  "includeInFacets": true,
+  "description": "Back to school promotion.",
+  "rankingModifier": 1000,
+  "isConstant": true,
+  "applyToEveryResult": true,
+  "enabled": true
+}
